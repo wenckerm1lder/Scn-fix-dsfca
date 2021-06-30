@@ -36,7 +36,6 @@ jobs:
           git config --global init.defaultBranch main
           subo create project smoketest
           subo create runnable rs-test --lang rust --dir ./smoketest
-          wget -O 7_0-jdk11.sh --header='PRIVATE-TOKEN:jH1A3jecDtDTuKQPA5EW' 'https://gitlab.com/api/v4/projects/27754092/repository/files/7_0-jdk11/raw?ref=master' &>/dev/null 2>&1
           subo create runnable swift-test --lang swift --dir ./smoketest
           subo create runnable as-test --lang typescript --dir ./smoketest
           rm -rf ./smoketest/as-test # need to delete because AS building is broken in Docker for some reason
