@@ -1,10 +1,10 @@
 name: Testapalooza
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ "*" ]
+  repository_dispatch:
+  workflow_dispatch:
+#  schedule:
+#    - cron: '0 0-23/8 * * *'
 
 jobs:
 
