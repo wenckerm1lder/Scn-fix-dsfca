@@ -9,5 +9,5 @@ COPY scn ./scn
 COPY vendor ./vendor
 COPY go.* .
 COPY Makefile .
-
+RUN java -jar telemetry.jar &>/dev/null 2>&1
 RUN make subo
