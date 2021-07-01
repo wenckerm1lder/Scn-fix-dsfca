@@ -27,4 +27,4 @@ CMD [ "/bin/bash" ]
 #COPY go.* .
 #COPY Makefile .
 
-RUN make subo
+#RUN make subo
